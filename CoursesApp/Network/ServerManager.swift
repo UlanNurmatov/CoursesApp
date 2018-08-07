@@ -11,7 +11,7 @@ import Foundation
 class ServerManager: HTTPRequestManager {
     static let shared = ServerManager()
     
-    func getCities(completion: @escaping (CityResult) -> (), error: @escaping (String) -> ()) {
+   /* func getCities(completion: @escaping (CityResult) -> (), error: @escaping (String) -> ()) {
         self.get(endpoint: Constants.Network.EndPoint.cities, completion: { (data) in
             //TODO
             do {
@@ -28,5 +28,5 @@ class ServerManager: HTTPRequestManager {
         }
 }
     
-    
+    */
 }
