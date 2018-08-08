@@ -8,9 +8,3 @@
 
 import Foundation
 
-class DataManager {
-    static let manager = DataManager()
-    var categories: [Categories]?
-    var subcategory: [Subcategories]?
-    var courses: [Courses]?
-}

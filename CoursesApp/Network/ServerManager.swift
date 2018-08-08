@@ -11,12 +11,12 @@ import Foundation
 class ServerManager: HTTPRequestManager {
     static let shared = ServerManager()
     
-   func getCategories(completion: @escaping ([Categories]) -> (), error: @escaping (String) -> ()) {
+   func getCategories(completion: @escaping ([Category]) -> (), error: @escaping (String) -> ()) {
         self.get(endpoint: Constants.Network.EndPoint.categories, completion: { (data) in
             //TODO
             do {
                 guard let  data = data else { return }
-                let result = try JSONDecoder().decode([Categories].self, from: data)
+                let result = try JSONDecoder().decode([Category].self, from: data)
                 completion(result)
             }
             catch let errorMessage {

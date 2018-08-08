@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Categories: Decodable {
+class Category: Decodable {
     var id: Int?
     var title: String?
     var category_image_url: String?

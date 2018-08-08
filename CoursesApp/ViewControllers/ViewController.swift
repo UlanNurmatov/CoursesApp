@@ -12,6 +12,8 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     
     @IBOutlet weak var collectionView: UICollectionView!
     
+    var categories: [Category] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         collectionView.dataSource = self
@@ -19,22 +21,21 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         ServerManager.shared.getCategories(completion: setCategories, error: showError)
     }
     
-    func setCategories(categories: [Categories]) {
-        DataManager.manager.categories = categories
+    func setCategories(categories: [Category]) {
+        self.categories = categories
+        self.collectionView.reloadData()
         }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return DataManager.manager.categories!.count
+        return self.categories.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CategoryCell", for: indexPath) as! CategoryCellVC
-        cell.setCategoryCell(category: DataManager.manager.categories![indexPath.item])
+        cell.setCategoryCell(category: categories[indexPath.item])
         return cell
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
+    
 }
 

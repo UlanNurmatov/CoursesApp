@@ -13,7 +13,7 @@ class CategoryCellVC: UICollectionViewCell {
     @IBOutlet weak var categoryImage: UIImageView!
     @IBOutlet weak var categoryTitle: UILabel!
     
-    func setCategoryCell(category: Categories) {
+    func setCategoryCell(category: Category) {
         guard let image = category.category_image_url else {
             return
         }
