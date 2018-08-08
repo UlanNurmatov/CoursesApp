@@ -7,11 +7,19 @@
 //
 
 import UIKit
+import Kingfisher
 
 class CategoryCellVC: UICollectionViewCell {
     @IBOutlet weak var categoryImage: UIImageView!
     @IBOutlet weak var categoryTitle: UILabel!
     
     func setCategoryCell(category: Categories) {
+        guard let image = category.category_image_url else {
+            return
+        }
+        let url = URL(string: image)
+        categoryImage.kf.setImage(with: url)
+        
+        categoryTitle.text = category.title
     }
 }

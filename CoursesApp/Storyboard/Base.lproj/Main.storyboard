@@ -113,6 +113,9 @@
                         <viewLayoutGuide key="safeArea" id="cwf-Gf-6v5"/>
                     </view>
                     <navigationItem key="navigationItem" id="Yrs-Yf-a7A"/>
+                    <connections>
+                        <outlet property="collectionView" destination="Mhd-Xf-YgZ" id="luE-dr-DJ0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IH0-fR-hX5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
