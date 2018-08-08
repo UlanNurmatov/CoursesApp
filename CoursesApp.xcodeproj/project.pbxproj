@@ -18,6 +18,9 @@
 		FFFAAF162119DAAE00FE6E75 /* ServerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFAAF152119DAAE00FE6E75 /* ServerManager.swift */; };
 		FFFAAF192119DBB300FE6E75 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFAAF182119DBB300FE6E75 /* Constants.swift */; };
 		FFFAAF1C2119DD6800FE6E75 /* Categories.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFAAF1B2119DD6800FE6E75 /* Categories.swift */; };
+		FFFAAF202119E05600FE6E75 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFAAF1F2119E05600FE6E75 /* Extensions.swift */; };
+		FFFAAF222119E23900FE6E75 /* Subcategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFAAF212119E23900FE6E75 /* Subcategories.swift */; };
+		FFFAAF24211ACADC00FE6E75 /* Courses.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFAAF23211ACADC00FE6E75 /* Courses.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +39,9 @@
 		FFFAAF152119DAAE00FE6E75 /* ServerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerManager.swift; sourceTree = "<group>"; };
 		FFFAAF182119DBB300FE6E75 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		FFFAAF1B2119DD6800FE6E75 /* Categories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categories.swift; sourceTree = "<group>"; };
+		FFFAAF1F2119E05600FE6E75 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		FFFAAF212119E23900FE6E75 /* Subcategories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subcategories.swift; sourceTree = "<group>"; };
+		FFFAAF23211ACADC00FE6E75 /* Courses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Courses.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				FFFAAF182119DBB300FE6E75 /* Constants.swift */,
+				FFFAAF1F2119E05600FE6E75 /* Extensions.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -123,6 +130,8 @@
 			isa = PBXGroup;
 			children = (
 				FFFAAF1B2119DD6800FE6E75 /* Categories.swift */,
+				FFFAAF212119E23900FE6E75 /* Subcategories.swift */,
+				FFFAAF23211ACADC00FE6E75 /* Courses.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -247,9 +256,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFFAAF24211ACADC00FE6E75 /* Courses.swift in Sources */,
 				FFFAAF162119DAAE00FE6E75 /* ServerManager.swift in Sources */,
 				FFFAAF1C2119DD6800FE6E75 /* Categories.swift in Sources */,
 				FFFAAF122119D9E400FE6E75 /* HTTPRequest.swift in Sources */,
+				FFFAAF222119E23900FE6E75 /* Subcategories.swift in Sources */,
+				FFFAAF202119E05600FE6E75 /* Extensions.swift in Sources */,
 				FFFAAF012119D7BC00FE6E75 /* ViewController.swift in Sources */,
 				FFFAAF142119DA4F00FE6E75 /* HTTPStatusCode.swift in Sources */,
 				FFFAAEFF2119D7BC00FE6E75 /* AppDelegate.swift in Sources */,

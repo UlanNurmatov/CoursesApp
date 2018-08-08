@@ -12,12 +12,25 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        ServerManager.shared.getCategories(completion: printCategories, error: showError)
+        ServerManager.shared.getSubcategories(categoryId: 4, completion: printSubcategories, error: showError)
     }
-
+    
+    func printCategories(categories: [Categories]) {
+        for i in categories {
+            print(i.title!)
+        }
+    }
+    
+    func printSubcategories(subcategories: [Subcategories]) {
+        for i in subcategories {
+            print(i.title!)
+        }
+    }
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
 
