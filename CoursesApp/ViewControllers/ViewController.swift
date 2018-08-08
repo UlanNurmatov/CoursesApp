@@ -8,26 +8,29 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class ViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
+    
+    @IBOutlet weak var collectionView: UICollectionView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        ServerManager.shared.getCategories(completion: printCategories, error: showError)
-        ServerManager.shared.getSubcategories(categoryId: 4, completion: printSubcategories, error: showError)
+        collectionView.dataSource = self
+        collectionView.delegate = self
+        ServerManager.shared.getCategories(completion: setCategories, error: showError)
     }
     
-    func printCategories(categories: [Categories]) {
-        for i in categories {
-            print(i.title!)
+    func setCategories(categories: [Categories]) {
+        DataManager.manager.categories = categories
         }
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return DataManager.manager.categories!.count
     }
     
-    func printSubcategories(subcategories: [Subcategories]) {
-        for i in subcategories {
-            print(i.title!)
-        }
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CategoryCell", for: indexPath) as! CategoryCellVC
+        return cell
     }
-    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

@@ -75,7 +75,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="6hc-cd-nhe">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CategoryCell" id="6hc-cd-nhe" customClass="CategoryCellVC" customModule="CoursesApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="176" height="193"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -95,6 +95,10 @@
                                                 </label>
                                             </subviews>
                                         </view>
+                                        <connections>
+                                            <outlet property="categoryImage" destination="fty-Tu-FP7" id="YjY-AA-qLd"/>
+                                            <outlet property="categoryTitle" destination="i4c-RR-QFX" id="0pV-KP-7LK"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
