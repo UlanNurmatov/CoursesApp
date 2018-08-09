@@ -155,12 +155,9 @@
 			isa = PBXGroup;
 			children = (
 				FFFAAF002119D7BC00FE6E75 /* ViewController.swift */,
-				FFFAAF2A211B4B6500FE6E75 /* CategoryCellVC.swift */,
 				FFFAAF2C211B96EA00FE6E75 /* SubcategoriesVC.swift */,
-				FFFAAF2E211B9B4300FE6E75 /* SubcategoriesCell.swift */,
 				FFFAAF30211C55D500FE6E75 /* CoursesVC.swift */,
-				FFFAAF32211C560900FE6E75 /* CoursesTableViewCell.swift */,
-				FFFAAF34211C85A700FE6E75 /* CoursesUpperCell.swift */,
+				FFFAAF38211C8CEE00FE6E75 /* Cells */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -171,6 +168,17 @@
 				FFFAAF022119D7BC00FE6E75 /* Main.storyboard */,
 			);
 			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		FFFAAF38211C8CEE00FE6E75 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				FFFAAF2A211B4B6500FE6E75 /* CategoryCellVC.swift */,
+				FFFAAF2E211B9B4300FE6E75 /* SubcategoriesCell.swift */,
+				FFFAAF32211C560900FE6E75 /* CoursesTableViewCell.swift */,
+				FFFAAF34211C85A700FE6E75 /* CoursesUpperCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
