@@ -35,6 +35,8 @@ class SubcategoriesVC: UIViewController, UICollectionViewDataSource, UICollectio
         cell.setSubcategoryCell(subcategory: subcategoriesArray[indexPath.item])
         return cell
     }
+    
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

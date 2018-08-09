@@ -25,6 +25,8 @@
 		FFFAAF2B211B4B6500FE6E75 /* CategoryCellVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFAAF2A211B4B6500FE6E75 /* CategoryCellVC.swift */; };
 		FFFAAF2D211B96EA00FE6E75 /* SubcategoriesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFAAF2C211B96EA00FE6E75 /* SubcategoriesVC.swift */; };
 		FFFAAF2F211B9B4300FE6E75 /* SubcategoriesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFAAF2E211B9B4300FE6E75 /* SubcategoriesCell.swift */; };
+		FFFAAF31211C55D500FE6E75 /* CoursesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFAAF30211C55D500FE6E75 /* CoursesVC.swift */; };
+		FFFAAF33211C560900FE6E75 /* CoursesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFAAF32211C560900FE6E75 /* CoursesTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +52,8 @@
 		FFFAAF2A211B4B6500FE6E75 /* CategoryCellVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCellVC.swift; sourceTree = "<group>"; };
 		FFFAAF2C211B96EA00FE6E75 /* SubcategoriesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubcategoriesVC.swift; sourceTree = "<group>"; };
 		FFFAAF2E211B9B4300FE6E75 /* SubcategoriesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubcategoriesCell.swift; sourceTree = "<group>"; };
+		FFFAAF30211C55D500FE6E75 /* CoursesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesVC.swift; sourceTree = "<group>"; };
+		FFFAAF32211C560900FE6E75 /* CoursesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +156,8 @@
 				FFFAAF2A211B4B6500FE6E75 /* CategoryCellVC.swift */,
 				FFFAAF2C211B96EA00FE6E75 /* SubcategoriesVC.swift */,
 				FFFAAF2E211B9B4300FE6E75 /* SubcategoriesCell.swift */,
+				FFFAAF30211C55D500FE6E75 /* CoursesVC.swift */,
+				FFFAAF32211C560900FE6E75 /* CoursesTableViewCell.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -289,6 +295,8 @@
 				FFFAAF142119DA4F00FE6E75 /* HTTPStatusCode.swift in Sources */,
 				FFFAAF27211B433000FE6E75 /* DataManager.swift in Sources */,
 				FFFAAEFF2119D7BC00FE6E75 /* AppDelegate.swift in Sources */,
+				FFFAAF31211C55D500FE6E75 /* CoursesVC.swift in Sources */,
+				FFFAAF33211C560900FE6E75 /* CoursesTableViewCell.swift in Sources */,
 				FFFAAF2B211B4B6500FE6E75 /* CategoryCellVC.swift in Sources */,
 				FFFAAF2F211B9B4300FE6E75 /* SubcategoriesCell.swift in Sources */,
 				FFFAAF192119DBB300FE6E75 /* Constants.swift in Sources */,
