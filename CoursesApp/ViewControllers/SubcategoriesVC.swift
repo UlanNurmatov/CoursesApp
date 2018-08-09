@@ -21,6 +21,7 @@ class SubcategoriesVC: UIViewController {
     
     func getSubcategories(subcategories: [Subcategories]) {
         subcategoriesArray = subcategories
+        print(subcategoriesArray.count)
     }
 
     override func didReceiveMemoryWarning() {
