@@ -7,8 +7,19 @@
 //
 
 import UIKit
+import Kingfisher
 
 class SubcategoriesCell: UICollectionViewCell {
     @IBOutlet weak var subImage: UIImageView!
     @IBOutlet weak var subTitle: UILabel!
+    
+    func setSubcategoryCell(subcategory: Subcategories) {
+        guard let image = subcategory.subcategory_image_url else {
+            return
+        }
+        let url = URL(string: image)
+        subImage.kf.setImage(with: url)
+        
+        subTitle.text = subcategory.title
+    }
 }

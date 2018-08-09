@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SubcategoriesVC: UIViewController {
+class SubcategoriesVC: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     
     @IBOutlet weak var collectionView: UICollectionView!
 
@@ -16,12 +16,24 @@ class SubcategoriesVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        collectionView.dataSource = self
+        collectionView.delegate = self
         
     }
     
     func getSubcategories(subcategories: [Subcategories]) {
         subcategoriesArray = subcategories
-        print(subcategoriesArray.count)
+        collectionView.reloadData()
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return subcategoriesArray.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "SubcategoryCell", for: indexPath) as! SubcategoriesCell
+        cell.setSubcategoryCell(subcategory: subcategoriesArray[indexPath.item])
+        return cell
     }
 
     override func didReceiveMemoryWarning() {

@@ -41,6 +41,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         let vc = sb.instantiateViewController(withIdentifier: "Subcategories") as! SubcategoriesVC
         let id = categories[indexPath.item].id!
         ServerManager.shared.getSubcategories(categoryId: id, completion: vc.getSubcategories, error: showError)
+        show(vc, sender: self)
     }
     
 }
