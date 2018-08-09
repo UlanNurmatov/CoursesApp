@@ -30,20 +30,30 @@ class CoursesVC: UIViewController, UITableViewDataSource {
     }
 
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
+        return 2
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if section == 0 {
+            return 1
+        }
         return coursesArray.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if indexPath.section == 0 {
+             let cell = tableView.dequeueReusableCell(withIdentifier: "UpperCell", for: indexPath) as! CoursesUpperCell
+            cell.subcategoryImage = mainImage
+            cell.subcategoryTitle = mainTitle
+            cell.setCell()
+            return cell
+        }
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: "CoursesCell", for: indexPath) as! CoursesTableViewCell
-        cell.mainImage = mainImage
-        cell.mainTitle = mainTitle
         cell.setCourseCell(course: coursesArray[indexPath.item])
         return cell
     }
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

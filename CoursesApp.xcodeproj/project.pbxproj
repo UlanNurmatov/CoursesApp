@@ -27,6 +27,7 @@
 		FFFAAF2F211B9B4300FE6E75 /* SubcategoriesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFAAF2E211B9B4300FE6E75 /* SubcategoriesCell.swift */; };
 		FFFAAF31211C55D500FE6E75 /* CoursesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFAAF30211C55D500FE6E75 /* CoursesVC.swift */; };
 		FFFAAF33211C560900FE6E75 /* CoursesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFAAF32211C560900FE6E75 /* CoursesTableViewCell.swift */; };
+		FFFAAF35211C85A700FE6E75 /* CoursesUpperCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFAAF34211C85A700FE6E75 /* CoursesUpperCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		FFFAAF2E211B9B4300FE6E75 /* SubcategoriesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubcategoriesCell.swift; sourceTree = "<group>"; };
 		FFFAAF30211C55D500FE6E75 /* CoursesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesVC.swift; sourceTree = "<group>"; };
 		FFFAAF32211C560900FE6E75 /* CoursesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesTableViewCell.swift; sourceTree = "<group>"; };
+		FFFAAF34211C85A700FE6E75 /* CoursesUpperCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesUpperCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +160,7 @@
 				FFFAAF2E211B9B4300FE6E75 /* SubcategoriesCell.swift */,
 				FFFAAF30211C55D500FE6E75 /* CoursesVC.swift */,
 				FFFAAF32211C560900FE6E75 /* CoursesTableViewCell.swift */,
+				FFFAAF34211C85A700FE6E75 /* CoursesUpperCell.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -300,6 +303,7 @@
 				FFFAAF2B211B4B6500FE6E75 /* CategoryCellVC.swift in Sources */,
 				FFFAAF2F211B9B4300FE6E75 /* SubcategoriesCell.swift in Sources */,
 				FFFAAF192119DBB300FE6E75 /* Constants.swift in Sources */,
+				FFFAAF35211C85A700FE6E75 /* CoursesUpperCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

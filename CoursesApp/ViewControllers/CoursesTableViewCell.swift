@@ -11,8 +11,6 @@ import Kingfisher
 
 class CoursesTableViewCell: UITableViewCell {
     
-    var mainImage: String? = ""
-    var mainTitle: String? = ""
     
     @IBOutlet weak var subcategoryImage: UIImageView!
     @IBOutlet weak var subcategoryLabel: UILabel!
@@ -32,16 +30,10 @@ class CoursesTableViewCell: UITableViewCell {
         guard let imageCourse = course.main_image_url else {
             return
         }
-        let url2 = URL(string: imageCourse)
-        courseImage.kf.setImage(with: url2)
+        let url1 = URL(string: imageCourse)
+        courseImage.kf.setImage(with: url1)
         
-        guard let imageMain = mainImage else {
-            return
-        }
-        let url3 = URL(string: imageMain)
-        subcategoryImage.kf.setImage(with: url3)
-        
-        subcategoryLabel.text = mainTitle
+
         
         courseTitle.text = course.title
         courseDescription.text = course.description
