@@ -36,6 +36,12 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         return cell
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        let vc = sb.instantiateViewController(withIdentifier: "Subcategories") as! SubcategoriesVC
+        let id = categories[indexPath.item].id!
+        ServerManager.shared.getSubcategories(categoryId: id, completion: vc.getSubcategories, error: showError)
+    }
     
 }
 
