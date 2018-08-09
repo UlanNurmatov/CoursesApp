@@ -195,7 +195,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Wdm-Rk-zyd">
-                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <rect key="frame" x="0.0" y="309" width="375" height="309"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CoursesCell" rowHeight="146" id="chn-fs-S7N" customClass="CoursesTableViewCell" customModule="CoursesApp" customModuleProvider="target">
@@ -232,13 +232,29 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1DY-9R-1kJ">
+                                <rect key="frame" x="0.0" y="64" width="375" height="245"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="245" id="WTZ-xm-n9u"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nvw-yR-q6j">
+                                <rect key="frame" x="16" y="275" width="297" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Wdm-Rk-zyd" firstAttribute="trailing" secondItem="mMT-pN-YHV" secondAttribute="trailing" id="3Is-Og-vNK"/>
-                            <constraint firstItem="Wdm-Rk-zyd" firstAttribute="bottom" secondItem="mMT-pN-YHV" secondAttribute="bottom" id="EkG-ip-ncm"/>
-                            <constraint firstItem="Wdm-Rk-zyd" firstAttribute="leading" secondItem="mMT-pN-YHV" secondAttribute="leading" id="j9h-Tk-One"/>
-                            <constraint firstItem="Wdm-Rk-zyd" firstAttribute="top" secondItem="mMT-pN-YHV" secondAttribute="top" id="jyC-sb-EXq"/>
+                            <constraint firstItem="Wdm-Rk-zyd" firstAttribute="top" secondItem="1DY-9R-1kJ" secondAttribute="bottom" id="5Kw-Az-zIi"/>
+                            <constraint firstItem="1DY-9R-1kJ" firstAttribute="leading" secondItem="mMT-pN-YHV" secondAttribute="leading" id="5zP-Co-mNt"/>
+                            <constraint firstItem="Wdm-Rk-zyd" firstAttribute="trailing" secondItem="mMT-pN-YHV" secondAttribute="trailing" id="SEK-GF-LRP"/>
+                            <constraint firstItem="Wdm-Rk-zyd" firstAttribute="leading" secondItem="mMT-pN-YHV" secondAttribute="leading" id="XCM-xy-1vm"/>
+                            <constraint firstItem="1DY-9R-1kJ" firstAttribute="top" secondItem="mMT-pN-YHV" secondAttribute="top" id="hDP-9c-Ly5"/>
+                            <constraint firstItem="Wdm-Rk-zyd" firstAttribute="bottom" secondItem="mMT-pN-YHV" secondAttribute="bottom" id="o71-I5-c3n"/>
+                            <constraint firstItem="1DY-9R-1kJ" firstAttribute="trailing" secondItem="mMT-pN-YHV" secondAttribute="trailing" id="xua-um-0hL"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="mMT-pN-YHV"/>
                     </view>

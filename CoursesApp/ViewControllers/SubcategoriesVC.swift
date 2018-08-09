@@ -36,7 +36,15 @@ class SubcategoriesVC: UIViewController, UICollectionViewDataSource, UICollectio
         return cell
     }
     
-    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        let vc = sb.instantiateViewController(withIdentifier: "Courses") as! CoursesVC
+        let id = subcategoriesArray[indexPath.item].id!
+        let subcategoryImage = subcategoriesArray[indexPath.item].subcategory_image_url
+        
+        ServerManager.shared.getCourses(categoryId: id, completion: <#T##([Courses]) -> ()#>, error: showError)
+        show(vc, sender: self)
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
