@@ -8,10 +8,10 @@
 
 import UIKit
 
-class ViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
+class ViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
     @IBOutlet weak var collectionView: UICollectionView!
-    
+    let cellInset: CGFloat = 10
     var categories: [Category] = []
     
     override func viewDidLoad() {
@@ -24,7 +24,24 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     func setCategories(categories: [Category]) {
         self.categories = categories
         self.collectionView.reloadData()
-        }
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return UIEdgeInsets(top: cellInset, left: cellInset, bottom: cellInset, right: cellInset)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let cellWidth = (collectionView.frame.width - (3.0 * cellInset)) / 2.0
+
+        return CGSize(width: cellWidth, height: cellWidth)
+    }
+    
+//    func collectionView(_ collectionView: UICollectionView, layout: UICollectionViewLayout, sizeForItemAt: IndexPath) -> CGSize {
+//        var cellWidth = (Int(collectionView.frame.width) - (3 * cellInset)) / 2
+//
+//        return CGSize(width: cellWidth, height: cellWidth)
+//    }
+//
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return self.categories.count

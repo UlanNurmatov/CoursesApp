@@ -8,12 +8,13 @@
 
 import UIKit
 
-class SubcategoriesVC: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
+class SubcategoriesVC: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
     @IBOutlet weak var collectionView: UICollectionView!
 
     var subcategoriesArray: [Subcategories] = []
-    
+    let cellInset: CGFloat = 10
+
     override func viewDidLoad() {
         super.viewDidLoad()
         collectionView.dataSource = self
@@ -24,6 +25,16 @@ class SubcategoriesVC: UIViewController, UICollectionViewDataSource, UICollectio
     func getSubcategories(subcategories: [Subcategories]) {
         subcategoriesArray = subcategories
         collectionView.reloadData()
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return UIEdgeInsets(top: cellInset, left: cellInset, bottom: cellInset, right: cellInset)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let cellWidth = (collectionView.frame.width - (3.0 * cellInset)) / 2.0
+        
+        return CGSize(width: cellWidth, height: cellWidth)
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
