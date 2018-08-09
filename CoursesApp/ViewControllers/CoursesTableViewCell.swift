@@ -10,6 +10,16 @@ import UIKit
 
 class CoursesTableViewCell: UITableViewCell {
     
+    let mainImage: String? = ""
+    let mainTitle: String? = ""
+    
+    @IBOutlet weak var subcategoryImage: UIImageView!
+    @IBOutlet weak var subcategoryLabel: UILabel!
+    @IBOutlet weak var logo: UIImageView!
+    @IBOutlet weak var courseImage: UIImageView!
+    @IBOutlet weak var courseTitle: UILabel!
+    @IBOutlet weak var courseDescription: UILabel!
+
     
     override func awakeFromNib() {
         super.awakeFromNib()

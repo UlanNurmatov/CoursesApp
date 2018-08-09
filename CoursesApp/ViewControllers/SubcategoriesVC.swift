@@ -41,8 +41,9 @@ class SubcategoriesVC: UIViewController, UICollectionViewDataSource, UICollectio
         let vc = sb.instantiateViewController(withIdentifier: "Courses") as! CoursesVC
         let id = subcategoriesArray[indexPath.item].id!
         let subcategoryImage = subcategoriesArray[indexPath.item].subcategory_image_url
+        let subcategoryTitle = subcategoriesArray[indexPath.item].title
         
-        ServerManager.shared.getCourses(categoryId: id, completion: <#T##([Courses]) -> ()#>, error: showError)
+        //ServerManager.shared.getCourses(categoryId: id, completion: <#T##([Courses]) -> ()#>, error: showError)
         show(vc, sender: self)
     }
 
