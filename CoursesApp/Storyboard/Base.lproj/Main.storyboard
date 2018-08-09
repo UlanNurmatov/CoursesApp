@@ -143,32 +143,41 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="LGY-g4-2Nk">
-                                    <size key="itemSize" width="176" height="198"/>
+                                    <size key="itemSize" width="192" height="192"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    <inset key="sectionInset" minX="10" minY="10" maxX="10" maxY="10"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SubcategoryCell" id="cvB-hB-Tub" customClass="SubcategoriesCell" customModule="CoursesApp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="176" height="198"/>
+                                        <rect key="frame" x="91.5" y="10" width="192" height="192"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="176" height="198"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="192" height="192"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xSf-ug-PoF">
-                                                    <rect key="frame" x="0.0" y="0.0" width="176" height="198"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <imageView userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xSf-ug-PoF">
+                                                    <rect key="frame" x="0.0" y="0.0" width="192" height="192"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vqb-J1-7hL">
-                                                    <rect key="frame" x="0.0" y="89" width="176" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vqb-J1-7hL">
+                                                    <rect key="frame" x="0.0" y="0.0" width="192" height="192"/>
+                                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.3242722602739726" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                         </view>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="vqb-J1-7hL" secondAttribute="bottom" id="AQb-PE-NMr"/>
+                                            <constraint firstAttribute="trailing" secondItem="xSf-ug-PoF" secondAttribute="trailing" id="Tag-Dh-HcI"/>
+                                            <constraint firstAttribute="bottom" secondItem="xSf-ug-PoF" secondAttribute="bottom" id="WJB-cK-crU"/>
+                                            <constraint firstAttribute="trailing" secondItem="vqb-J1-7hL" secondAttribute="trailing" id="Wiv-Hc-gEI"/>
+                                            <constraint firstItem="vqb-J1-7hL" firstAttribute="top" secondItem="cvB-hB-Tub" secondAttribute="top" id="ao4-W9-he4"/>
+                                            <constraint firstItem="xSf-ug-PoF" firstAttribute="top" secondItem="cvB-hB-Tub" secondAttribute="top" id="gB7-sn-GtL"/>
+                                            <constraint firstItem="xSf-ug-PoF" firstAttribute="leading" secondItem="cvB-hB-Tub" secondAttribute="leading" id="gmo-t8-4tU"/>
+                                            <constraint firstItem="vqb-J1-7hL" firstAttribute="leading" secondItem="cvB-hB-Tub" secondAttribute="leading" id="tqO-OJ-pkq"/>
+                                        </constraints>
                                         <connections>
                                             <outlet property="subImage" destination="xSf-ug-PoF" id="cNX-Ez-Tdb"/>
                                             <outlet property="subTitle" destination="vqb-J1-7hL" id="ePL-B0-cAv"/>
