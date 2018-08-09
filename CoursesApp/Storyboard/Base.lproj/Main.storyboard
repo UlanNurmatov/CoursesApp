@@ -206,29 +206,37 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wiD-NA-NEq">
-                                                    <rect key="frame" x="15" y="0.0" width="47" height="32"/>
+                                                    <rect key="frame" x="15" y="11" width="47" height="32"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7AV-kH-5e3">
-                                                    <rect key="frame" x="70" y="6" width="199" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZR0-e8-Qpe">
-                                                    <rect key="frame" x="15" y="40" width="236" height="86"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZR0-e8-Qpe">
+                                                    <rect key="frame" x="15" y="49" width="236" height="86"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZKf-TB-WDA">
-                                                    <rect key="frame" x="266" y="40" width="94" height="86"/>
+                                                    <rect key="frame" x="266" y="49" width="94" height="86"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7AV-kH-5e3">
+                                                    <rect key="frame" x="70" y="17" width="199" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="courseDescription" destination="ZR0-e8-Qpe" id="UnK-U5-zkN"/>
+                                            <outlet property="courseImage" destination="ZKf-TB-WDA" id="JGI-vZ-VNp"/>
+                                            <outlet property="courseTitle" destination="7AV-kH-5e3" id="QYp-PR-lZQ"/>
+                                            <outlet property="logo" destination="wiD-NA-NEq" id="OW5-sz-fjn"/>
+                                            <outlet property="subcategoryImage" destination="1DY-9R-1kJ" id="cvD-EB-Rok"/>
+                                            <outlet property="subcategoryLabel" destination="Nvw-yR-q6j" id="f0P-nO-Ngk"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -258,6 +266,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="mMT-pN-YHV"/>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="Wdm-Rk-zyd" id="Ck8-FV-JdI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nyr-BY-uNb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
