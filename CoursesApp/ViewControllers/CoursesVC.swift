@@ -20,7 +20,7 @@ class CoursesVC: UIViewController, UITableViewDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
-        tableView.rowHeight = 250
+        tableView.rowHeight = 200
       
     }
     
