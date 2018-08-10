@@ -305,10 +305,10 @@
             </objects>
             <point key="canvasLocation" x="3623.1999999999998" y="-438.53073463268368"/>
         </scene>
-        <!--View Controller-->
+        <!--Detailed CourseVC-->
         <scene sceneID="Kim-6g-Pz6">
             <objects>
-                <viewController id="phm-S4-nrt" sceneMemberID="viewController">
+                <viewController id="phm-S4-nrt" customClass="DetailedCourseVC" customModule="CoursesApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pTN-lH-eWt">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -429,6 +429,15 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="B8d-1d-7W5"/>
                     </view>
+                    <connections>
+                        <outlet property="courseTitle" destination="9j5-9C-L9g" id="1lY-Gg-T1I"/>
+                        <outlet property="logo" destination="eSf-M2-IvC" id="TkH-TB-0w4"/>
+                        <outlet property="mainImage" destination="O94-yo-2MW" id="imF-ed-xZX"/>
+                        <outlet property="serviceDescription" destination="ymu-sf-tcM" id="7A9-RJ-cL1"/>
+                        <outlet property="servicePrice" destination="KOo-YQ-1cC" id="ql4-7S-asu"/>
+                        <outlet property="serviceTitle" destination="vIn-tH-1Sk" id="lqr-mP-hh3"/>
+                        <outlet property="tableView" destination="Obm-0M-wfw" id="8XM-C5-Nhd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1yZ-yY-a2v" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
