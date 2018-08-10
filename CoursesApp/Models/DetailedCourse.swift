@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Course: Decodable {
+class DetailedCourse: Decodable {
     var id: Int?
     var title: String?
     var description: String?
