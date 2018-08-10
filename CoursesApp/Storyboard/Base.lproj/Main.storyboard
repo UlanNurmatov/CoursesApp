@@ -430,12 +430,6 @@
                         <viewLayoutGuide key="safeArea" id="B8d-1d-7W5"/>
                     </view>
                     <connections>
-                        <outlet property="courseTitle" destination="9j5-9C-L9g" id="1lY-Gg-T1I"/>
-                        <outlet property="logo" destination="eSf-M2-IvC" id="TkH-TB-0w4"/>
-                        <outlet property="mainImage" destination="O94-yo-2MW" id="imF-ed-xZX"/>
-                        <outlet property="serviceDescription" destination="ymu-sf-tcM" id="7A9-RJ-cL1"/>
-                        <outlet property="servicePrice" destination="KOo-YQ-1cC" id="ql4-7S-asu"/>
-                        <outlet property="serviceTitle" destination="vIn-tH-1Sk" id="lqr-mP-hh3"/>
                         <outlet property="tableView" destination="Obm-0M-wfw" id="8XM-C5-Nhd"/>
                     </connections>
                 </viewController>

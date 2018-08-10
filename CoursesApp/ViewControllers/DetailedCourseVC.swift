@@ -11,12 +11,7 @@ import UIKit
 class DetailedCourseVC: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var logo: UIImageView!
-    @IBOutlet weak var mainImage: UIImageView!
-    @IBOutlet weak var courseTitle: UILabel!
-    @IBOutlet weak var serviceTitle: UILabel!
-    @IBOutlet weak var serviceDescription: UILabel!
-    @IBOutlet weak var servicePrice: UILabel!
+    
     
     var course: DetailedCourse?
 
