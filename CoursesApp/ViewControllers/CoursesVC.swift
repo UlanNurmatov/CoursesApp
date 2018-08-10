@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CoursesVC: UIViewController, UITableViewDataSource {
+class CoursesVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -20,6 +20,7 @@ class CoursesVC: UIViewController, UITableViewDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
+        tableView.delegate = self
         tableView.rowHeight = 200
       
     }
@@ -52,6 +53,10 @@ class CoursesVC: UIViewController, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CoursesCell", for: indexPath) as! CoursesTableViewCell
         cell.setCourseCell(course: coursesArray[indexPath.item])
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        <#code#>
     }
     
     
