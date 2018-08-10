@@ -28,6 +28,7 @@
 		FFFAAF31211C55D500FE6E75 /* CoursesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFAAF30211C55D500FE6E75 /* CoursesVC.swift */; };
 		FFFAAF33211C560900FE6E75 /* CoursesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFAAF32211C560900FE6E75 /* CoursesTableViewCell.swift */; };
 		FFFAAF35211C85A700FE6E75 /* CoursesUpperCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFAAF34211C85A700FE6E75 /* CoursesUpperCell.swift */; };
+		FFFAAF3A211C8D8000FE6E75 /* DetailedCourse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFAAF39211C8D8000FE6E75 /* DetailedCourse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		FFFAAF30211C55D500FE6E75 /* CoursesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesVC.swift; sourceTree = "<group>"; };
 		FFFAAF32211C560900FE6E75 /* CoursesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesTableViewCell.swift; sourceTree = "<group>"; };
 		FFFAAF34211C85A700FE6E75 /* CoursesUpperCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesUpperCell.swift; sourceTree = "<group>"; };
+		FFFAAF39211C8D8000FE6E75 /* DetailedCourse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedCourse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +149,7 @@
 				FFFAAF1B2119DD6800FE6E75 /* Categories.swift */,
 				FFFAAF212119E23900FE6E75 /* Subcategories.swift */,
 				FFFAAF23211ACADC00FE6E75 /* Courses.swift */,
+				FFFAAF39211C8D8000FE6E75 /* DetailedCourse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -302,6 +305,7 @@
 				FFFAAF122119D9E400FE6E75 /* HTTPRequest.swift in Sources */,
 				FFFAAF222119E23900FE6E75 /* Subcategories.swift in Sources */,
 				FFFAAF202119E05600FE6E75 /* Extensions.swift in Sources */,
+				FFFAAF3A211C8D8000FE6E75 /* DetailedCourse.swift in Sources */,
 				FFFAAF012119D7BC00FE6E75 /* ViewController.swift in Sources */,
 				FFFAAF142119DA4F00FE6E75 /* HTTPStatusCode.swift in Sources */,
 				FFFAAF27211B433000FE6E75 /* DataManager.swift in Sources */,
