@@ -16,6 +16,8 @@ class Course: Decodable {
     var logo_image_url: String?
     var contactsResults: [Contact]?
     var branchesResults: [Branch]?
+    var serviceResults: [Contact]?
+    var actionsResults: [Actions]?
 }
 
 class Contact: Decodable {
