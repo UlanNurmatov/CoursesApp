@@ -317,7 +317,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="310" id="nYB-U2-1tQ">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="detailedUpper" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="310" id="nYB-U2-1tQ" customClass="DetailedUpperCell" customModule="CoursesApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="310"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nYB-U2-1tQ" id="1eC-gS-26s">
@@ -385,8 +385,13 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="courseTitle" destination="9j5-9C-L9g" id="gLA-zi-D5q"/>
+                                            <outlet property="logo" destination="eSf-M2-IvC" id="WMt-2u-25f"/>
+                                            <outlet property="mainImage" destination="O94-yo-2MW" id="y6E-EA-Ynw"/>
+                                        </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="324" id="7U9-n2-fpd">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="detailedLower" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="324" id="7U9-n2-fpd" customClass="DetailedLowerCell" customModule="CoursesApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="338" width="375" height="324"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="7U9-n2-fpd" id="9O0-8c-DGj">
@@ -416,6 +421,11 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="serviceDescription" destination="ymu-sf-tcM" id="m2M-PT-Owl"/>
+                                            <outlet property="servicePrice" destination="KOo-YQ-1cC" id="tte-ho-O86"/>
+                                            <outlet property="serviceTitle" destination="vIn-tH-1Sk" id="bRz-41-3T9"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
