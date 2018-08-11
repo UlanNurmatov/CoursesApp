@@ -50,6 +50,9 @@ class DetailedCourseVC: UIViewController, UITableViewDataSource, UITableViewDele
         if currentType == .info {
             return 1
         }
+        if currentType == .address {
+            return course!.branches!.count
+        }
         return 0
     }
     
@@ -63,6 +66,12 @@ class DetailedCourseVC: UIViewController, UITableViewDataSource, UITableViewDele
         if currentType == .contacts {
             let cell = tableView.dequeueReusableCell(withIdentifier: "contactCell", for: indexPath) as!  CourseContactCell
             cell.setData(contact: course!.contacts![indexPath.item])
+            return cell
+        }
+        
+        if currentType == .address {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "addressCell", for: indexPath) as!  CourseAddressCell
+            cell.setData(address: course!.branches![indexPath.item])
             return cell
         }
         return UITableViewCell()
