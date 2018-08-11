@@ -16,31 +16,18 @@ class DetailedUpperCell: UITableViewCell {
     @IBOutlet weak var courseTitle: UILabel!
     
     
-
+    var delegate: CourseTypeDelegate?
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
     
-    @IBAction func infoButtonTapped() {
-        
+    @IBAction func buttonTapped(button: UIButton) {
+        let type = CourseInfoType(rawValue: button.tag)
+        delegate?.setCourseType(type: type!)
     }
-    
-    @IBAction func contactButtonTapped() {
-        
-    }
-    
-    @IBAction func addressButtonTapped() {
-        
-    }
-    
-    @IBAction func ServicesButtonTapped() {
-        
-    }
-    
-    @IBAction func actionsButtonTapped() {
-        
-    }
+
     
     
     

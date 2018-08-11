@@ -355,39 +355,39 @@
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <state key="normal" title="Button" image="info"/>
                                                     <connections>
-                                                        <action selector="infoButtonTapped" destination="nYB-U2-1tQ" eventType="touchUpInside" id="5Qf-iL-mIB"/>
+                                                        <action selector="buttonTappedWithButton:" destination="nYB-U2-1tQ" eventType="touchUpInside" id="u4g-eA-cNH"/>
                                                     </connections>
                                                 </button>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yC3-CI-sBI">
+                                                <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yC3-CI-sBI">
                                                     <rect key="frame" x="94" y="267" width="30" height="24"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <state key="normal" title="Button" image="megaphone"/>
                                                     <connections>
-                                                        <action selector="actionsButtonTapped" destination="nYB-U2-1tQ" eventType="touchUpInside" id="zSM-Nr-6lG"/>
+                                                        <action selector="buttonTappedWithButton:" destination="nYB-U2-1tQ" eventType="touchUpInside" id="buC-yH-wxX"/>
                                                     </connections>
                                                 </button>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oBr-GU-smh">
+                                                <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oBr-GU-smh">
                                                     <rect key="frame" x="231" y="268" width="32" height="24"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <state key="normal" title="Button" image="notepad"/>
                                                     <connections>
-                                                        <action selector="contactButtonTapped" destination="nYB-U2-1tQ" eventType="touchUpInside" id="a1e-pG-KKZ"/>
+                                                        <action selector="buttonTappedWithButton:" destination="nYB-U2-1tQ" eventType="touchUpInside" id="53v-7d-HI7"/>
                                                     </connections>
                                                 </button>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="INp-cM-kJV">
+                                                <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="INp-cM-kJV">
                                                     <rect key="frame" x="316" y="268" width="29" height="24"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <state key="normal" title="Button" image="info-3"/>
                                                     <connections>
-                                                        <action selector="ServicesButtonTapped" destination="nYB-U2-1tQ" eventType="touchUpInside" id="mAK-CJ-a3d"/>
+                                                        <action selector="buttonTappedWithButton:" destination="nYB-U2-1tQ" eventType="touchUpInside" id="U3K-xi-pAc"/>
                                                     </connections>
                                                 </button>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lix-Oc-0UY">
+                                                <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lix-Oc-0UY">
                                                     <rect key="frame" x="158" y="268" width="24" height="24"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <state key="normal" title="Button" image="placeholder"/>
                                                     <connections>
-                                                        <action selector="addressButtonTapped" destination="nYB-U2-1tQ" eventType="touchUpInside" id="qb8-gI-cuA"/>
+                                                        <action selector="buttonTappedWithButton:" destination="nYB-U2-1tQ" eventType="touchUpInside" id="3m8-Q9-JZf"/>
                                                     </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Сохраненные" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mwk-jQ-1J8">

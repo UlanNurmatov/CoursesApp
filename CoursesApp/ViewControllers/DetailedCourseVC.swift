@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DetailedCourseVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class DetailedCourseVC: UIViewController, UITableViewDataSource, UITableViewDelegate, CourseTypeDelegate {
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -27,6 +27,11 @@ class DetailedCourseVC: UIViewController, UITableViewDataSource, UITableViewDele
         tableView.reloadData()
     }
     
+    func setCourseType(type: CourseInfoType) {
+        currentType = type
+        print(type)
+        tableView.reloadData()
+    }
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 2
@@ -51,6 +56,7 @@ class DetailedCourseVC: UIViewController, UITableViewDataSource, UITableViewDele
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.section == 0 {
         let cell = tableView.dequeueReusableCell(withIdentifier: "detailedUpper", for: indexPath) as! DetailedUpperCell
+            cell.delegate = self
             cell.setUpperDetailedCell(course: course!)
             return cell
         }

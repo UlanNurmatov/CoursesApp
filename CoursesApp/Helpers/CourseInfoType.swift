@@ -8,10 +8,10 @@
 
 import Foundation
 
-enum CourseInfoType {
-    case info
-    case services
-    case contacts
-    case address
-    case actions
+enum CourseInfoType : Int {
+    case info = 0
+    case services = 1
+    case contacts = 2
+    case address = 3
+    case actions  = 4
 }
