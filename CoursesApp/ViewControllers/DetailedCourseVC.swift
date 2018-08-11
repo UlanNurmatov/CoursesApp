@@ -19,6 +19,7 @@ class DetailedCourseVC: UIViewController, UITableViewDataSource, UITableViewDele
         super.viewDidLoad()
         tableView.dataSource = self
         tableView.delegate = self
+        tableView.estimatedRowHeight = 130
         ServerManager.shared.getCourse(courseId: id, completion: getCourse, error: showError)
     }
     
@@ -74,6 +75,19 @@ class DetailedCourseVC: UIViewController, UITableViewDataSource, UITableViewDele
             cell.setData(address: course!.branches![indexPath.item])
             return cell
         }
+        
+        if currentType == .info {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "infoCell", for: indexPath) as!  CourseInfoCell
+            cell.setData(info: course!)
+            return cell
+        }
+        
+        if currentType == .services {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "infoCell", for: indexPath) as!  CourseInfoCell
+            cell.setData(info: course!)
+            return cell
+        }
+        
         return UITableViewCell()
     }
     
@@ -81,6 +95,9 @@ class DetailedCourseVC: UIViewController, UITableViewDataSource, UITableViewDele
         if indexPath.section == 0 {
             return 300
         } else {
+            if indexPath.row == 0 {
+                return UITableViewAutomaticDimension
+            }
             return 50
         }
     }
