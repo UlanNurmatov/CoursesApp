@@ -35,6 +35,7 @@
 		FFFAAF44211EAA5000FE6E75 /* CourseTypeDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFAAF43211EAA5000FE6E75 /* CourseTypeDelegate.swift */; };
 		FFFAAF46211EAAE900FE6E75 /* CourseInfoType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFAAF45211EAAE900FE6E75 /* CourseInfoType.swift */; };
 		FFFAAF48211EAE7800FE6E75 /* CourseAddressCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFAAF47211EAE7800FE6E75 /* CourseAddressCell.swift */; };
+		FFFAAF4A211EB36C00FE6E75 /* CourseInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFAAF49211EB36C00FE6E75 /* CourseInfoCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +71,7 @@
 		FFFAAF43211EAA5000FE6E75 /* CourseTypeDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseTypeDelegate.swift; sourceTree = "<group>"; };
 		FFFAAF45211EAAE900FE6E75 /* CourseInfoType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseInfoType.swift; sourceTree = "<group>"; };
 		FFFAAF47211EAE7800FE6E75 /* CourseAddressCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseAddressCell.swift; sourceTree = "<group>"; };
+		FFFAAF49211EB36C00FE6E75 /* CourseInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseInfoCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,6 +200,7 @@
 				FFFAAF3F211E339300FE6E75 /* DetailedLowerCell.swift */,
 				FFFAAF41211E9C8600FE6E75 /* CourseContactCell.swift */,
 				FFFAAF47211EAE7800FE6E75 /* CourseAddressCell.swift */,
+				FFFAAF49211EB36C00FE6E75 /* CourseInfoCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -318,6 +321,7 @@
 			files = (
 				FFFAAF24211ACADC00FE6E75 /* Courses.swift in Sources */,
 				FFFAAF48211EAE7800FE6E75 /* CourseAddressCell.swift in Sources */,
+				FFFAAF4A211EB36C00FE6E75 /* CourseInfoCell.swift in Sources */,
 				FFFAAF42211E9C8600FE6E75 /* CourseContactCell.swift in Sources */,
 				FFFAAF162119DAAE00FE6E75 /* ServerManager.swift in Sources */,
 				FFFAAF1C2119DD6800FE6E75 /* Categories.swift in Sources */,
