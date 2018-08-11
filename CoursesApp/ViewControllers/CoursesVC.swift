@@ -56,7 +56,11 @@ class CoursesVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        let vc = sb.instantiateViewController(withIdentifier: "detailed") as! DetailedCourseVC
+        let id = coursesArray[indexPath.item].id!
+        vc.id = id
+        show(vc, sender: self)
     }
     
     

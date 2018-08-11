@@ -9,6 +9,7 @@
 import Foundation
 
 class Courses: Decodable {
+    var id: Int?
     var title: String?
     var description: String?
     var main_image_url: String?

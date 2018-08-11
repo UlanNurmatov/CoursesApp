@@ -14,10 +14,10 @@ class DetailedCourse: Decodable {
     var description: String?
     var main_image_url: String?
     var logo_image_url: String?
-    var contactsResults: [Contact]?
-    var branchesResults: [Branch]?
-    var serviceResults: [Contact]?
-    var actionsResults: [Actions]?
+    var contacts: [Contact]?
+    var branches: [Branch]?
+    var services: [Contact]?
+    var actions: [Actions]?
 }
 
 class Contact: Decodable {

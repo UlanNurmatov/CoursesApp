@@ -31,6 +31,9 @@
 		FFFAAF3C211DF95300FE6E75 /* DetailedCourseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFAAF3B211DF95300FE6E75 /* DetailedCourseVC.swift */; };
 		FFFAAF3E211E336F00FE6E75 /* DetailedUpperCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFAAF3D211E336F00FE6E75 /* DetailedUpperCell.swift */; };
 		FFFAAF40211E339300FE6E75 /* DetailedLowerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFAAF3F211E339300FE6E75 /* DetailedLowerCell.swift */; };
+		FFFAAF42211E9C8600FE6E75 /* CourseContactCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFAAF41211E9C8600FE6E75 /* CourseContactCell.swift */; };
+		FFFAAF44211EAA5000FE6E75 /* CourseTypeDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFAAF43211EAA5000FE6E75 /* CourseTypeDelegate.swift */; };
+		FFFAAF46211EAAE900FE6E75 /* CourseInfoType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFAAF45211EAAE900FE6E75 /* CourseInfoType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +65,9 @@
 		FFFAAF3B211DF95300FE6E75 /* DetailedCourseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedCourseVC.swift; sourceTree = "<group>"; };
 		FFFAAF3D211E336F00FE6E75 /* DetailedUpperCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedUpperCell.swift; sourceTree = "<group>"; };
 		FFFAAF3F211E339300FE6E75 /* DetailedLowerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedLowerCell.swift; sourceTree = "<group>"; };
+		FFFAAF41211E9C8600FE6E75 /* CourseContactCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseContactCell.swift; sourceTree = "<group>"; };
+		FFFAAF43211EAA5000FE6E75 /* CourseTypeDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseTypeDelegate.swift; sourceTree = "<group>"; };
+		FFFAAF45211EAAE900FE6E75 /* CourseInfoType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseInfoType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +148,8 @@
 			children = (
 				FFFAAF182119DBB300FE6E75 /* Constants.swift */,
 				FFFAAF1F2119E05600FE6E75 /* Extensions.swift */,
+				FFFAAF43211EAA5000FE6E75 /* CourseTypeDelegate.swift */,
+				FFFAAF45211EAAE900FE6E75 /* CourseInfoType.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -186,6 +194,7 @@
 				FFFAAF34211C85A700FE6E75 /* CoursesUpperCell.swift */,
 				FFFAAF3D211E336F00FE6E75 /* DetailedUpperCell.swift */,
 				FFFAAF3F211E339300FE6E75 /* DetailedLowerCell.swift */,
+				FFFAAF41211E9C8600FE6E75 /* CourseContactCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -305,6 +314,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FFFAAF24211ACADC00FE6E75 /* Courses.swift in Sources */,
+				FFFAAF42211E9C8600FE6E75 /* CourseContactCell.swift in Sources */,
 				FFFAAF162119DAAE00FE6E75 /* ServerManager.swift in Sources */,
 				FFFAAF1C2119DD6800FE6E75 /* Categories.swift in Sources */,
 				FFFAAF40211E339300FE6E75 /* DetailedLowerCell.swift in Sources */,
@@ -312,6 +322,8 @@
 				FFFAAF122119D9E400FE6E75 /* HTTPRequest.swift in Sources */,
 				FFFAAF222119E23900FE6E75 /* Subcategories.swift in Sources */,
 				FFFAAF3E211E336F00FE6E75 /* DetailedUpperCell.swift in Sources */,
+				FFFAAF46211EAAE900FE6E75 /* CourseInfoType.swift in Sources */,
+				FFFAAF44211EAA5000FE6E75 /* CourseTypeDelegate.swift in Sources */,
 				FFFAAF202119E05600FE6E75 /* Extensions.swift in Sources */,
 				FFFAAF3A211C8D8000FE6E75 /* DetailedCourse.swift in Sources */,
 				FFFAAF012119D7BC00FE6E75 /* ViewController.swift in Sources */,
