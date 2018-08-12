@@ -54,6 +54,9 @@ class DetailedCourseVC: UIViewController, UITableViewDataSource, UITableViewDele
         if currentType == .address {
             return course!.branches!.count
         }
+        if currentType == .services {
+            return course!.services!.count
+        }
         return 0
     }
     
@@ -83,8 +86,8 @@ class DetailedCourseVC: UIViewController, UITableViewDataSource, UITableViewDele
         }
         
         if currentType == .services {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "infoCell", for: indexPath) as!  CourseInfoCell
-            cell.setData(info: course!)
+            let cell = tableView.dequeueReusableCell(withIdentifier: "servicesCell", for: indexPath) as!  CourseServicesCell
+            cell.setData(service: course!.services![indexPath.item])
             return cell
         }
         
@@ -95,13 +98,10 @@ class DetailedCourseVC: UIViewController, UITableViewDataSource, UITableViewDele
         if indexPath.section == 0 {
             return 300
         } else {
-            if indexPath.row == 0 {
-                return UITableViewAutomaticDimension
-            }
-            return 50
+            return UITableViewAutomaticDimension
         }
     }
+    }
     
-    
-}
+
 

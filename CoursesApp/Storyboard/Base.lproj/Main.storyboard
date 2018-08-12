@@ -7,6 +7,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -491,29 +492,46 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="206.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="06f-IX-blF">
-                                                    <rect key="frame" x="27" y="67" width="333" height="100"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gS5-0u-2df">
+                                                    <rect key="frame" x="30" y="26" width="345" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ok-NL-AZF">
-                                                    <rect key="frame" x="27" y="175" width="333" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ok-NL-AZF">
+                                                    <rect key="frame" x="30" y="165" width="345" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gS5-0u-2df">
-                                                    <rect key="frame" x="27" y="29" width="333" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="06f-IX-blF">
+                                                    <rect key="frame" x="30" y="57" width="315" height="100"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="100" id="BPA-8q-DOa"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="7ok-NL-AZF" firstAttribute="top" secondItem="06f-IX-blF" secondAttribute="bottom" constant="8" id="EBr-gM-VAE"/>
+                                                <constraint firstItem="7ok-NL-AZF" firstAttribute="leading" secondItem="kFT-sl-pJ2" secondAttribute="leadingMargin" constant="15" id="ELP-RS-CCH"/>
+                                                <constraint firstItem="06f-IX-blF" firstAttribute="top" secondItem="gS5-0u-2df" secondAttribute="bottom" constant="10" id="SaI-Gu-TlL"/>
+                                                <constraint firstItem="gS5-0u-2df" firstAttribute="leading" secondItem="kFT-sl-pJ2" secondAttribute="leadingMargin" constant="15" id="SnJ-iV-mI8"/>
+                                                <constraint firstItem="gS5-0u-2df" firstAttribute="top" secondItem="kFT-sl-pJ2" secondAttribute="topMargin" constant="15" id="bOt-Gi-IWn"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="06f-IX-blF" secondAttribute="trailing" constant="15" id="djA-mT-0k4"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="7ok-NL-AZF" secondAttribute="bottom" constant="10" id="iHZ-h0-hhB"/>
+                                                <constraint firstItem="gS5-0u-2df" firstAttribute="trailing" secondItem="kFT-sl-pJ2" secondAttribute="trailingMargin" constant="15" id="jg2-UT-4e5"/>
+                                                <constraint firstItem="7ok-NL-AZF" firstAttribute="trailing" secondItem="kFT-sl-pJ2" secondAttribute="trailingMargin" constant="15" id="kbu-33-91i"/>
+                                                <constraint firstItem="06f-IX-blF" firstAttribute="leading" secondItem="kFT-sl-pJ2" secondAttribute="leadingMargin" constant="15" id="o0F-2p-Tp0"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="serviceDescription" destination="06f-IX-blF" id="fz6-cw-BFS"/>
+                                            <outlet property="servicePrice" destination="7ok-NL-AZF" id="iIQ-DR-DPZ"/>
+                                            <outlet property="serviceTitle" destination="gS5-0u-2df" id="m0q-vb-YAR"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
