@@ -13,7 +13,7 @@ class DetailedCourseVC: UIViewController, UITableViewDataSource, UITableViewDele
     @IBOutlet weak var tableView: UITableView!
     
     var course: DetailedCourse?
-    var currentType : CourseInfoType = .contacts
+    var currentType : CourseInfoType = .info
     var id: Int = 0
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -57,6 +57,9 @@ class DetailedCourseVC: UIViewController, UITableViewDataSource, UITableViewDele
         if currentType == .services {
             return course!.services!.count
         }
+        if currentType == .actions {
+            return course!.actions!.count
+        }
         return 0
     }
     
@@ -90,7 +93,11 @@ class DetailedCourseVC: UIViewController, UITableViewDataSource, UITableViewDele
             cell.setData(service: course!.services![indexPath.item])
             return cell
         }
-        
+        if currentType == .actions {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "actionsCell", for: indexPath) as!  CourseActionsCell
+            cell.setData(action: course!.actions![indexPath.item])
+            return cell
+        }
         return UITableViewCell()
     }
     

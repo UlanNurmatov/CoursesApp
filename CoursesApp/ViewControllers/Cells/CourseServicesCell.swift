@@ -18,7 +18,7 @@ class CourseServicesCell: UITableViewCell {
     func setData(service: Service) {
         serviceTitle.text = service.title
         serviceDescription.text = service.description
-        servicePrice.text = service.price
+        servicePrice.text = ("Цена: \(service.price ?? "Не определена")")
     }
 
     override func awakeFromNib() {

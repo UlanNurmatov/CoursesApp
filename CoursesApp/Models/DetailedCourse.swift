@@ -17,7 +17,7 @@ class DetailedCourse: Decodable {
     var contacts: [Contact]?
     var branches: [Branch]?
     var services: [Service]?
-    var actions: [Actions]?
+    var actions: [Action]?
 }
 
 class Contact: Decodable {
@@ -37,7 +37,7 @@ class Service: Decodable {
     var price: String?
 }
 
-class Actions: Decodable {
+class Action: Decodable {
     var id: Int?
     var title: String?
     var description: String?
