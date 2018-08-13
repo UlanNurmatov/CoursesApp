@@ -26,6 +26,7 @@ class CoursesTableViewCell: UITableViewCell {
         }
         let url = URL(string: imageLogo)
         logo.kf.setImage(with: url)
+        logo.roundedImage()
         
         guard let imageCourse = course.main_image_url else {
             return
