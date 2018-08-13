@@ -21,8 +21,6 @@ class CoursesVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         super.viewDidLoad()
         tableView.dataSource = self
         tableView.delegate = self
-        tableView.rowHeight = 200
-      
     }
     
     func getCourses(courses: [Courses]) {
@@ -63,13 +61,18 @@ class CoursesVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         show(vc, sender: self)
     }
     
-    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if indexPath.section == 0 {
+            return 300
+        } else {
+            return UITableViewAutomaticDimension
+        }
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-       
+        
     }
-    
-
-    
-
 }
+    
+    
+
