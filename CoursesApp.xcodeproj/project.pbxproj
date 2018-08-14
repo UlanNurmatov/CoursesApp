@@ -37,7 +37,6 @@
 		FFFAAF4A211EB36C00FE6E75 /* CourseInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFAAF49211EB36C00FE6E75 /* CourseInfoCell.swift */; };
 		FFFAAF4C211EB79E00FE6E75 /* CourseServicesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFAAF4B211EB79E00FE6E75 /* CourseServicesCell.swift */; };
 		FFFAAF4E2120B30C00FE6E75 /* CourseActionsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFAAF4D2120B30C00FE6E75 /* CourseActionsCell.swift */; };
-		FFFAAF502121D99A00FE6E75 /* RoundedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFAAF4F2121D99A00FE6E75 /* RoundedImage.swift */; };
 		FFFAAF522123152000FE6E75 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFAAF512123151F00FE6E75 /* HomeViewController.swift */; };
 		FFFAAF54212315A100FE6E75 /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFAAF53212315A100FE6E75 /* HomeCell.swift */; };
 		FFFAAF562123173200FE6E75 /* AllCoursesPaginated.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFAAF552123173200FE6E75 /* AllCoursesPaginated.swift */; };
@@ -78,7 +77,6 @@
 		FFFAAF49211EB36C00FE6E75 /* CourseInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseInfoCell.swift; sourceTree = "<group>"; };
 		FFFAAF4B211EB79E00FE6E75 /* CourseServicesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseServicesCell.swift; sourceTree = "<group>"; };
 		FFFAAF4D2120B30C00FE6E75 /* CourseActionsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseActionsCell.swift; sourceTree = "<group>"; };
-		FFFAAF4F2121D99A00FE6E75 /* RoundedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedImage.swift; sourceTree = "<group>"; };
 		FFFAAF512123151F00FE6E75 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		FFFAAF53212315A100FE6E75 /* HomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
 		FFFAAF552123173200FE6E75 /* AllCoursesPaginated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCoursesPaginated.swift; sourceTree = "<group>"; };
@@ -164,7 +162,6 @@
 				FFFAAF1F2119E05600FE6E75 /* Extensions.swift */,
 				FFFAAF43211EAA5000FE6E75 /* CourseTypeDelegate.swift */,
 				FFFAAF45211EAAE900FE6E75 /* CourseInfoType.swift */,
-				FFFAAF4F2121D99A00FE6E75 /* RoundedImage.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -357,7 +354,6 @@
 				FFFAAF522123152000FE6E75 /* HomeViewController.swift in Sources */,
 				FFFAAF33211C560900FE6E75 /* CoursesTableViewCell.swift in Sources */,
 				FFFAAF2B211B4B6500FE6E75 /* CategoryCellVC.swift in Sources */,
-				FFFAAF502121D99A00FE6E75 /* RoundedImage.swift in Sources */,
 				FFFAAF4C211EB79E00FE6E75 /* CourseServicesCell.swift in Sources */,
 				FFFAAF4E2120B30C00FE6E75 /* CourseActionsCell.swift in Sources */,
 				FFFAAF54212315A100FE6E75 /* HomeCell.swift in Sources */,

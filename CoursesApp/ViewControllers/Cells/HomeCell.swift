@@ -22,9 +22,11 @@ class HomeCell: UITableViewCell {
         
         let url2 = URL(string: course.logo_image_url!)
         logo.kf.setImage(with: url2)
+        logo.roundedImage()
         
         courseTitle.text = course.title
         courseDescription.text = course.description
+        
     }
 
 

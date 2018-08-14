@@ -80,7 +80,7 @@ class ServerManager: HTTPRequestManager {
     }
     
     func getPaginatedCourses(pageNumber: Int, completion: @escaping (AllCoursesPaginated) -> (), error: @escaping (String) -> ()) {
-        self.get(endpoint: "\(Constants.Network.EndPoint.paginatedCourses)\(pageNumber)/", completion: { (data) in
+        self.get(endpoint: "\(Constants.Network.EndPoint.paginatedCourses)\(pageNumber)", completion: { (data) in
             //TODO
             do {
                 guard let  data = data else { return }
