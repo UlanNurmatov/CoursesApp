@@ -15,11 +15,9 @@ struct Constants {
             static let categories = "categories/"
             static let courses = "subcategories/"
             static let detailedCourse = "courses/"
+            static let paginatedCourses = "courses/?page_size=10&page="
 
             
-
-            
-
         }
         
         struct ErrorMessage {

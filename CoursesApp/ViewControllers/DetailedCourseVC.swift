@@ -20,6 +20,7 @@ class DetailedCourseVC: UIViewController, UITableViewDataSource, UITableViewDele
         tableView.dataSource = self
         tableView.delegate = self
         //tableView.estimatedRowHeight = 130
+        tableView.tableFooterView = UIView()
         ServerManager.shared.getCourse(courseId: id, completion: getCourse, error: showError)
     }
     

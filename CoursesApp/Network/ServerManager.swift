@@ -78,5 +78,22 @@ class ServerManager: HTTPRequestManager {
             error(errorMessage)
         }
     }
+    
+    func getPaginatedCourses(pageNumber: Int, completion: @escaping (AllCoursesPaginated) -> (), error: @escaping (String) -> ()) {
+        self.get(endpoint: "\(Constants.Network.EndPoint.paginatedCourses)\(pageNumber)/", completion: { (data) in
+            //TODO
+            do {
+                guard let  data = data else { return }
+                let result = try JSONDecoder().decode(AllCoursesPaginated.self, from: data)
+                completion(result)
+            }
+            catch let errorMessage {
+                error(errorMessage.localizedDescription)
+            }
+            
+        }) { (errorMessage) in
+            error(errorMessage)
+        }
+    }
 
 }
