@@ -19,7 +19,7 @@ class DetailedCourseVC: UIViewController, UITableViewDataSource, UITableViewDele
         super.viewDidLoad()
         tableView.dataSource = self
         tableView.delegate = self
-        tableView.estimatedRowHeight = 130
+        //tableView.estimatedRowHeight = 130
         ServerManager.shared.getCourse(courseId: id, completion: getCourse, error: showError)
     }
     
@@ -103,7 +103,7 @@ class DetailedCourseVC: UIViewController, UITableViewDataSource, UITableViewDele
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if indexPath.section == 0 {
-            return 300
+            return 350
         } else {
             return UITableViewAutomaticDimension
         }
