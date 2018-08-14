@@ -384,6 +384,9 @@
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eci-RY-fjX">
                                                     <rect key="frame" x="0.0" y="272" width="375" height="1"/>
                                                     <color key="backgroundColor" red="0.92336215101522845" green="0.92336215101522845" blue="0.92336215101522845" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="1" id="etn-ac-kg4"/>
+                                                    </constraints>
                                                 </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Сохраненные" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mwk-jQ-1J8">
                                                     <rect key="frame" x="268" y="212" width="92" height="17"/>
@@ -496,16 +499,33 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vIn-tH-1Sk">
-                                                    <rect key="frame" x="15" y="23" width="345" height="21"/>
+                                                    <rect key="frame" x="15" y="23" width="267" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JBz-0M-tq8">
+                                                    <rect key="frame" x="328" y="21" width="25" height="25"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="25" id="Nsg-F3-Dso"/>
+                                                        <constraint firstAttribute="height" constant="25" id="Om0-Fu-0y9"/>
+                                                    </constraints>
+                                                    <state key="normal" title="Button" image="phone-call"/>
+                                                    <connections>
+                                                        <action selector="callPhoneNumber" destination="7U9-n2-fpd" eventType="touchUpInside" id="qKC-tp-BYN"/>
+                                                    </connections>
+                                                </button>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="JBz-0M-tq8" secondAttribute="bottom" constant="17.5" id="002-Ia-zZc"/>
+                                                <constraint firstAttribute="trailing" secondItem="JBz-0M-tq8" secondAttribute="trailing" constant="22" id="6Qu-K8-FFI"/>
+                                                <constraint firstItem="JBz-0M-tq8" firstAttribute="top" secondItem="9O0-8c-DGj" secondAttribute="top" constant="21" id="BRW-dv-71K"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="contactLabel" destination="vIn-tH-1Sk" id="bDk-qs-bzm"/>
+                                            <outlet property="phoneCall" destination="JBz-0M-tq8" id="x95-ic-bJb"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="addressCell" id="izf-Pn-2jW" customClass="CourseAddressCell" customModule="CoursesApp" customModuleProvider="target">
@@ -725,6 +745,7 @@
         <image name="info-3" width="24" height="24"/>
         <image name="megaphone" width="24" height="24"/>
         <image name="notepad" width="24" height="24"/>
+        <image name="phone-call" width="24" height="24"/>
         <image name="placeholder" width="24" height="24"/>
     </resources>
 </document>

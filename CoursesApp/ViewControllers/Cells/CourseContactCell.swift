@@ -11,11 +11,29 @@ import UIKit
 class CourseContactCell: UITableViewCell {
     
     @IBOutlet weak var contactLabel: UILabel!
-
+    @IBOutlet weak var phoneCall: UIButton!
     
     func setData(contact: Contact) {
         contactLabel.text = contact.contact
+        if contact.type == "PHONE" {
+            phoneCall.setImage(#imageLiteral(resourceName: "phone-call"), for: UIControlState.normal)
+        } else {
+            phoneCall.setImage(#imageLiteral(resourceName: "grid-world"), for: UIControlState.normal)
+        }
     }
+    
+    @IBAction func callPhoneNumber() {
+        guard let url = URL(string: contactLabel.text!) else {
+            return
+        }
+        
+        if #available(iOS 10.0, *) {
+            UIApplication.shared.open(url)
+        } else {
+            UIApplication.shared.openURL(url)
+        }
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

@@ -16,6 +16,7 @@ class CourseAddressCell: UITableViewCell {
     func setData(address: Branch) {
         addressLabel.text = address.address
     }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
