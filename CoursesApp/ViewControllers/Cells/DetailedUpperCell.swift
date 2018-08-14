@@ -34,6 +34,7 @@ class DetailedUpperCell: UITableViewCell {
     func setUpperDetailedCell(course: DetailedCourse) {
         let url1 = URL(string: course.logo_image_url!)
         logo.kf.setImage(with: url1)
+        logo.roundedImage()
         
         let url2 = URL(string: course.main_image_url!)
         mainImage.kf.setImage(with: url2)
