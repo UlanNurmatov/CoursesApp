@@ -15,6 +15,13 @@ class DetailedUpperCell: UITableViewCell {
     @IBOutlet weak var mainImage: UIImageView!
     @IBOutlet weak var courseTitle: UILabel!
     
+    @IBOutlet weak var infoButton: UIButton!
+    @IBOutlet weak var servicesButton: UIButton!
+    @IBOutlet weak var contactsButton: UIButton!
+    @IBOutlet weak var addressButton: UIButton!
+    @IBOutlet weak var actionsButton: UIButton!
+
+    
     
     var delegate: CourseTypeDelegate?
     
@@ -31,7 +38,7 @@ class DetailedUpperCell: UITableViewCell {
     
     
     
-    func setUpperDetailedCell(course: DetailedCourse) {
+    func setUpperDetailedCell(course: DetailedCourse, currentType: CourseInfoType) {
         let url1 = URL(string: course.logo_image_url!)
         logo.kf.setImage(with: url1)
         logo.roundedImage()
@@ -40,6 +47,17 @@ class DetailedUpperCell: UITableViewCell {
         mainImage.kf.setImage(with: url2)
         
         courseTitle.text = course.title
+        
+        if currentType == .info {
+            infoButton.setImage(#imageLiteral(resourceName: "info-enabled-1"), for: UIControlState.normal)
+        } else {
+            infoButton.setImage(#imageLiteral(resourceName: "info"), for: UIControlState.normal)
+        }
+        if currentType == .services {
+            servicesButton.setImage(#imageLiteral(resourceName: "info-2"), for: UIControlState.normal)
+        } else {
+            infoButton.setImage(#imageLiteral(resourceName: "info"), for: UIControlState.normal)
+        }
     
     }
 

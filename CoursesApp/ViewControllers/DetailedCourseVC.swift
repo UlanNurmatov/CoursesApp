@@ -68,7 +68,7 @@ class DetailedCourseVC: UIViewController, UITableViewDataSource, UITableViewDele
         if indexPath.section == 0 {
         let cell = tableView.dequeueReusableCell(withIdentifier: "detailedUpper", for: indexPath) as! DetailedUpperCell
             cell.delegate = self
-            cell.setUpperDetailedCell(course: course!)
+            cell.setUpperDetailedCell(course: course!, currentType: currentType)
             return cell
         }
         if currentType == .contacts {
