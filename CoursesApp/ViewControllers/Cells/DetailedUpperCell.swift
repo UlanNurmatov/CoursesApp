@@ -49,16 +49,30 @@ class DetailedUpperCell: UITableViewCell {
         courseTitle.text = course.title
         
         if currentType == .info {
-            infoButton.setImage(#imageLiteral(resourceName: "info-enabled-1"), for: UIControlState.normal)
+            infoButton.setImage(#imageLiteral(resourceName: "info-enabled"), for: UIControlState.normal)
         } else {
-            infoButton.setImage(#imageLiteral(resourceName: "info"), for: UIControlState.normal)
+            infoButton.setImage(#imageLiteral(resourceName: "info-disabled"), for: UIControlState.normal)
         }
         if currentType == .services {
-            servicesButton.setImage(#imageLiteral(resourceName: "info-2"), for: UIControlState.normal)
+            servicesButton.setImage(#imageLiteral(resourceName: "services-enabled"), for: UIControlState.normal)
         } else {
-            infoButton.setImage(#imageLiteral(resourceName: "info"), for: UIControlState.normal)
+            servicesButton.setImage(#imageLiteral(resourceName: "services-disabled"), for: UIControlState.normal)
         }
-    
+        if currentType == .contacts {
+            contactsButton.setImage(#imageLiteral(resourceName: "contact-enabled"), for: UIControlState.normal)
+        } else {
+            contactsButton.setImage(#imageLiteral(resourceName: "contact-disabled"), for: UIControlState.normal)
+        }
+        if currentType == .address {
+            addressButton.setImage(#imageLiteral(resourceName: "location-enabled"), for: UIControlState.normal)
+        } else {
+            addressButton.setImage(#imageLiteral(resourceName: "location-disabled"), for: UIControlState.normal)
+        }
+        if currentType == .actions {
+            actionsButton.setImage(#imageLiteral(resourceName: "announce-enabled"), for: UIControlState.normal)
+        } else {
+            actionsButton.setImage(#imageLiteral(resourceName: "announce-disabled"), for: UIControlState.normal)
+        }
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
