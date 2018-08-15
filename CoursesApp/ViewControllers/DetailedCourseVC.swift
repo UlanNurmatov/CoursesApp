@@ -104,7 +104,7 @@ class DetailedCourseVC: UIViewController, UITableViewDataSource, UITableViewDele
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if indexPath.section == 0 {
-            return 350
+            return 390
         } else {
             return UITableViewAutomaticDimension
         }
