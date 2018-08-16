@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		3CFAD2F07980E145A42AFE28 /* Pods_CoursesApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3DB216BD88DC824EED28CC1 /* Pods_CoursesApp.framework */; };
 		FF1AAB7A212597E60092AD90 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1AAB79212597E60092AD90 /* News.swift */; };
+		FF1AAB7C21259C820092AD90 /* NewsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1AAB7B21259C820092AD90 /* NewsList.swift */; };
+		FF1AAB7E21259F5E0092AD90 /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1AAB7D21259F5E0092AD90 /* NewsCell.swift */; };
 		FFFAAEFF2119D7BC00FE6E75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFAAEFE2119D7BC00FE6E75 /* AppDelegate.swift */; };
 		FFFAAF012119D7BC00FE6E75 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFAAF002119D7BC00FE6E75 /* ViewController.swift */; };
 		FFFAAF042119D7BC00FE6E75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFFAAF022119D7BC00FE6E75 /* Main.storyboard */; };
@@ -49,6 +51,8 @@
 		86ABA19645789A4F0BB8FDC1 /* Pods-CoursesApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoursesApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoursesApp/Pods-CoursesApp.release.xcconfig"; sourceTree = "<group>"; };
 		B3DB216BD88DC824EED28CC1 /* Pods_CoursesApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoursesApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF1AAB79212597E60092AD90 /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
+		FF1AAB7B21259C820092AD90 /* NewsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsList.swift; sourceTree = "<group>"; };
+		FF1AAB7D21259F5E0092AD90 /* NewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCell.swift; sourceTree = "<group>"; };
 		FFFAAEFB2119D7BC00FE6E75 /* CoursesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoursesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFFAAEFE2119D7BC00FE6E75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FFFAAF002119D7BC00FE6E75 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -192,6 +196,7 @@
 				FFFAAF3B211DF95300FE6E75 /* DetailedCourseVC.swift */,
 				FFFAAF512123151F00FE6E75 /* HomeViewController.swift */,
 				FFFAAF57212573AB00FE6E75 /* DetailedCourseHome.swift */,
+				FF1AAB7B21259C820092AD90 /* NewsList.swift */,
 				FFFAAF38211C8CEE00FE6E75 /* Cells */,
 			);
 			path = ViewControllers;
@@ -219,6 +224,7 @@
 				FFFAAF4B211EB79E00FE6E75 /* CourseServicesCell.swift */,
 				FFFAAF4D2120B30C00FE6E75 /* CourseActionsCell.swift */,
 				FFFAAF53212315A100FE6E75 /* HomeCell.swift */,
+				FF1AAB7D21259F5E0092AD90 /* NewsCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -339,6 +345,7 @@
 			files = (
 				FFFAAF24211ACADC00FE6E75 /* Courses.swift in Sources */,
 				FFFAAF48211EAE7800FE6E75 /* CourseAddressCell.swift in Sources */,
+				FF1AAB7C21259C820092AD90 /* NewsList.swift in Sources */,
 				FFFAAF4A211EB36C00FE6E75 /* CourseInfoCell.swift in Sources */,
 				FFFAAF42211E9C8600FE6E75 /* CourseContactCell.swift in Sources */,
 				FFFAAF162119DAAE00FE6E75 /* ServerManager.swift in Sources */,
@@ -346,6 +353,7 @@
 				FFFAAF2D211B96EA00FE6E75 /* SubcategoriesVC.swift in Sources */,
 				FFFAAF122119D9E400FE6E75 /* HTTPRequest.swift in Sources */,
 				FFFAAF222119E23900FE6E75 /* Subcategories.swift in Sources */,
+				FF1AAB7E21259F5E0092AD90 /* NewsCell.swift in Sources */,
 				FFFAAF58212573AB00FE6E75 /* DetailedCourseHome.swift in Sources */,
 				FF1AAB7A212597E60092AD90 /* News.swift in Sources */,
 				FFFAAF3E211E336F00FE6E75 /* DetailedUpperCell.swift in Sources */,

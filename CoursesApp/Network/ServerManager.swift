@@ -96,12 +96,12 @@ class ServerManager: HTTPRequestManager {
         }
     }
     
-    func getNews(pageNumber: Int, completion: @escaping (AllCoursesPaginated) -> (), error: @escaping (String) -> ()) {
-        self.get(endpoint: "\(Constants.Network.EndPoint.paginatedCourses)\(pageNumber)", completion: { (data) in
+    func getNews(completion: @escaping (News) -> (), error: @escaping (String) -> ()) {
+        self.get(endpoint: "\(Constants.Network.EndPoint.news)", completion: { (data) in
             //TODO
             do {
                 guard let  data = data else { return }
-                let result = try JSONDecoder().decode(AllCoursesPaginated.self, from: data)
+                let result = try JSONDecoder().decode(News.self, from: data)
                 completion(result)
             }
             catch let errorMessage {
