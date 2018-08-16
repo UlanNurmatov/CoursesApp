@@ -16,6 +16,7 @@ struct Constants {
             static let courses = "subcategories/"
             static let detailedCourse = "courses/"
             static let paginatedCourses = "courses/?page_size=10&page="
+            static let news = "news/"
             
         }
         
