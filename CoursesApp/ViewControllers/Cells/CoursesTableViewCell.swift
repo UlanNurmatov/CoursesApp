@@ -8,25 +8,25 @@
 
 import UIKit
 import Kingfisher
+import Hero
 
 class CoursesTableViewCell: UITableViewCell {
     
     
-    @IBOutlet weak var subcategoryImage: UIImageView!
-    @IBOutlet weak var subcategoryLabel: UILabel!
     @IBOutlet weak var logo: UIImageView!
     @IBOutlet weak var courseImage: UIImageView!
     @IBOutlet weak var courseTitle: UILabel!
     @IBOutlet weak var courseDescription: UILabel!
     
+    
     func setCourseCell(course: Courses) {
-        
         guard let imageLogo = course.logo_image_url else {
             return
         }
         let url = URL(string: imageLogo)
         logo.kf.setImage(with: url)
         logo.roundedImage()
+        logo.hero.id = "logoTrans"
         
         guard let imageCourse = course.main_image_url else {
             return

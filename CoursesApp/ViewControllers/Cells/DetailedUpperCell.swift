@@ -8,6 +8,7 @@
 
 import UIKit
 import Kingfisher
+import Hero
 
 class DetailedUpperCell: UITableViewCell {
     
@@ -20,7 +21,6 @@ class DetailedUpperCell: UITableViewCell {
     @IBOutlet weak var contactsButton: UIButton!
     @IBOutlet weak var addressButton: UIButton!
     @IBOutlet weak var actionsButton: UIButton!
-
     
     
     var delegate: CourseTypeDelegate?
@@ -42,6 +42,8 @@ class DetailedUpperCell: UITableViewCell {
         let url1 = URL(string: course.logo_image_url!)
         logo.kf.setImage(with: url1)
         logo.roundedImage()
+        //logo.hero.id = "logoTrans"
+       // logo.hero.modifiers = [.arc]
         
         let url2 = URL(string: course.main_image_url!)
         mainImage.kf.setImage(with: url2)
