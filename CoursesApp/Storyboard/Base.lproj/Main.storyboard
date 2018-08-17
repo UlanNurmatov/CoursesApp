@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="TCO-Xc-V5k">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ay0-Dh-GVz">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -596,7 +596,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eSf-M2-IvC">
-                                                    <rect key="frame" x="150.5" y="163" width="75" height="75"/>
+                                                    <rect key="frame" x="151" y="163" width="75" height="75"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="75" id="E0i-hs-ddp"/>
                                                         <constraint firstAttribute="width" constant="75" id="Hog-37-dLq"/>
@@ -635,7 +635,7 @@
                                                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="5Tv-Io-vMk">
                                                                     <rect key="frame" x="0.0" y="0.0" width="360" height="30"/>
                                                                     <subviews>
-                                                                        <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GPv-Mf-knK">
+                                                                        <button opaque="NO" alpha="0.65000000000000002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GPv-Mf-knK">
                                                                             <rect key="frame" x="0.0" y="1.5" width="32" height="27"/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="width" constant="32" id="Xrq-5p-jtf"/>
@@ -646,7 +646,7 @@
                                                                                 <action selector="buttonTappedWithButton:" destination="nYB-U2-1tQ" eventType="touchUpInside" id="u4g-eA-cNH"/>
                                                                             </connections>
                                                                         </button>
-                                                                        <button opaque="NO" alpha="0.5" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yC3-CI-sBI">
+                                                                        <button opaque="NO" alpha="0.65000000000000002" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yC3-CI-sBI">
                                                                             <rect key="frame" x="82" y="1.5" width="32" height="27"/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="width" constant="32" id="LuG-WI-bH0"/>
@@ -657,7 +657,7 @@
                                                                                 <action selector="buttonTappedWithButton:" destination="nYB-U2-1tQ" eventType="touchUpInside" id="buC-yH-wxX"/>
                                                                             </connections>
                                                                         </button>
-                                                                        <button opaque="NO" alpha="0.5" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lix-Oc-0UY">
+                                                                        <button opaque="NO" alpha="0.65000000000000002" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lix-Oc-0UY">
                                                                             <rect key="frame" x="164" y="1.5" width="32" height="27"/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="height" constant="27" id="5Nc-Zu-VIu"/>
@@ -668,7 +668,7 @@
                                                                                 <action selector="buttonTappedWithButton:" destination="nYB-U2-1tQ" eventType="touchUpInside" id="3m8-Q9-JZf"/>
                                                                             </connections>
                                                                         </button>
-                                                                        <button opaque="NO" alpha="0.5" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oBr-GU-smh">
+                                                                        <button opaque="NO" alpha="0.65000000000000002" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oBr-GU-smh">
                                                                             <rect key="frame" x="246" y="1.5" width="32" height="27"/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="height" constant="27" id="KUo-j3-LSt"/>
@@ -679,7 +679,7 @@
                                                                                 <action selector="buttonTappedWithButton:" destination="nYB-U2-1tQ" eventType="touchUpInside" id="53v-7d-HI7"/>
                                                                             </connections>
                                                                         </button>
-                                                                        <button opaque="NO" alpha="0.5" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="INp-cM-kJV">
+                                                                        <button opaque="NO" alpha="0.65000000000000002" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="INp-cM-kJV">
                                                                             <rect key="frame" x="328" y="1.5" width="32" height="27"/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="width" constant="32" id="r76-OQ-aG1"/>
@@ -986,16 +986,19 @@
             </objects>
             <point key="canvasLocation" x="-36" y="-105"/>
         </scene>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="6Kf-Kb-0KG">
             <objects>
-                <viewController id="Ay0-Dh-GVz" sceneMemberID="viewController">
+                <viewController id="Ay0-Dh-GVz" customClass="LoginViewController" customModule="CoursesApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rrY-qY-hUf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="X8y-PV-Q1r"/>
                     </view>
+                    <connections>
+                        <segue destination="TCO-Xc-V5k" kind="show" id="uPB-Bi-GVh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b9o-2E-5vA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

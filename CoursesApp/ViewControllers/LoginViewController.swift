@@ -10,13 +10,16 @@ import UIKit
 import FacebookLogin
 
 class LoginViewController: UIViewController {
+    
+    @IBOutlet weak var facebookLoginButton: UIButton!
 
-    
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        let loginButton = LoginButton(readPermissions: [ .publicProfile, .email, .userFriends ])
+        loginButton.center = view.center
+        
+        view.addSubview(loginButton)
+    
     }
 
     override func didReceiveMemoryWarning() {
