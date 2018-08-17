@@ -41,6 +41,14 @@ class NewsList: UIViewController, UITableViewDataSource, UITableViewDelegate {
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        let vc = sb.instantiateViewController(withIdentifier: "newsDetails") as! NewsDetails
+        let id = news[indexPath.item].id
+        vc.id = id
+        show(vc, sender: self)
+    }
+    
   func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
      return UITableViewAutomaticDimension
   }
