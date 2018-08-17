@@ -18,15 +18,11 @@ class NewsDetails: UIViewController {
     @IBOutlet weak var newsText: UITextView!
 
     var id: Int?
-    var news: NewsItem?
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        ServerManager.shared.getNewsItem(newsId: id!, completion: getNews, error: showError)
-    }
-
-    func getNews(news: NewsItem) {
-        self.news = news
+        ServerManager.shared.getNewsItem(newsId: id!, completion: setNews, error: showError)
     }
     
     func setNews(news: NewsItem) {
