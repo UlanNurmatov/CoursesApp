@@ -18,11 +18,13 @@ class NewsList: UIViewController, UITableViewDataSource, UITableViewDelegate {
         super.viewDidLoad()
         tableView.dataSource = self
         tableView.delegate = self
+        tableView.estimatedRowHeight = 300
         ServerManager.shared.getNews(completion: getNews, error: showError)
     }
     
     func getNews(news: News) {
         self.news = news.results!
+        tableView.reloadData()
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -39,9 +41,9 @@ class NewsList: UIViewController, UITableViewDataSource, UITableViewDelegate {
         return cell
     }
     
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return UITableViewAutomaticDimension
-    }
+  func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+     return UITableViewAutomaticDimension
+  }
     
     
     override func didReceiveMemoryWarning() {

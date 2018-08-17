@@ -23,7 +23,6 @@ class NewsCell: UITableViewCell {
         
         let url = URL(string: newsItem.news_image!)
         newsImage.kf.setImage(with: url)
-        print(newsItem.title!)
     }
     
     override func awakeFromNib() {
