@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Hero
 
 class CoursesVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
@@ -58,6 +59,7 @@ class CoursesVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         let vc = sb.instantiateViewController(withIdentifier: "detailed") as! DetailedCourseVC
         let id = coursesArray[indexPath.item].id!
         vc.id = id
+        vc.hero.modalAnimationType = .zoom
         show(vc, sender: self)
     }
     

@@ -70,7 +70,6 @@ class DetailedCourseVC: UIViewController, UITableViewDataSource, UITableViewDele
         let cell = tableView.dequeueReusableCell(withIdentifier: "detailedUpper", for: indexPath) as! DetailedUpperCell
             cell.delegate = self
             cell.setUpperDetailedCell(course: course!, currentType: currentType)
-            cell.logo.hero.id = "logoTrans"
             return cell
         }
         if currentType == .contacts {

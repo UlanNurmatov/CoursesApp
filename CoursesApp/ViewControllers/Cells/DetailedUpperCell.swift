@@ -34,16 +34,13 @@ class DetailedUpperCell: UITableViewCell {
         let type = CourseInfoType(rawValue: button.tag)
         delegate?.setCourseType(type: type!)
     }
-
-    
-    
     
     func setUpperDetailedCell(course: DetailedCourse, currentType: CourseInfoType) {
         let url1 = URL(string: course.logo_image_url!)
         logo.kf.setImage(with: url1)
         logo.roundedImage()
-        //logo.hero.id = "logoTrans"
-       // logo.hero.modifiers = [.arc]
+        logo.hero.id = "logoTrans"
+        logo.hero.modifiers = [.arc]
         
         let url2 = URL(string: course.main_image_url!)
         mainImage.kf.setImage(with: url2)

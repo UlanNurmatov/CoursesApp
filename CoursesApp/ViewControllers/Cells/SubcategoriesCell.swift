@@ -8,6 +8,7 @@
 
 import UIKit
 import Kingfisher
+import Hero
 
 class SubcategoriesCell: UICollectionViewCell {
     @IBOutlet weak var subImage: UIImageView!
@@ -19,6 +20,7 @@ class SubcategoriesCell: UICollectionViewCell {
         }
         let url = URL(string: image)
         subImage.kf.setImage(with: url)
+        subImage.hero.id = "subImage"
         
         subTitle.text = subcategory.title
     }

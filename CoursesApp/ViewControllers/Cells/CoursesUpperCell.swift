@@ -8,6 +8,7 @@
 
 import UIKit
 import Kingfisher
+import Hero
 
 class CoursesUpperCell: UITableViewCell {
 
@@ -21,8 +22,10 @@ class CoursesUpperCell: UITableViewCell {
 
         let url = URL(string: subcategoryImage!)
         mainImage.kf.setImage(with: url)
+        mainImage.hero.id = "subImage"
         
         mainTitle.text = subcategoryTitle
+        
         
     }
     
