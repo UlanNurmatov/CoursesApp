@@ -12,6 +12,7 @@
 		FF1AAB7C21259C820092AD90 /* NewsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1AAB7B21259C820092AD90 /* NewsList.swift */; };
 		FF1AAB7E21259F5E0092AD90 /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1AAB7D21259F5E0092AD90 /* NewsCell.swift */; };
 		FF1AAB80212709E40092AD90 /* NewsDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1AAB7F212709E40092AD90 /* NewsDetails.swift */; };
+		FF1AAB82212767870092AD90 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1AAB81212767870092AD90 /* LoginViewController.swift */; };
 		FFFAAEFF2119D7BC00FE6E75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFAAEFE2119D7BC00FE6E75 /* AppDelegate.swift */; };
 		FFFAAF012119D7BC00FE6E75 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFAAF002119D7BC00FE6E75 /* ViewController.swift */; };
 		FFFAAF042119D7BC00FE6E75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFFAAF022119D7BC00FE6E75 /* Main.storyboard */; };
@@ -55,6 +56,7 @@
 		FF1AAB7B21259C820092AD90 /* NewsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsList.swift; sourceTree = "<group>"; };
 		FF1AAB7D21259F5E0092AD90 /* NewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCell.swift; sourceTree = "<group>"; };
 		FF1AAB7F212709E40092AD90 /* NewsDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetails.swift; sourceTree = "<group>"; };
+		FF1AAB81212767870092AD90 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		FFFAAEFB2119D7BC00FE6E75 /* CoursesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoursesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFFAAEFE2119D7BC00FE6E75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FFFAAF002119D7BC00FE6E75 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -200,6 +202,7 @@
 				FFFAAF57212573AB00FE6E75 /* DetailedCourseHome.swift */,
 				FF1AAB7B21259C820092AD90 /* NewsList.swift */,
 				FF1AAB7F212709E40092AD90 /* NewsDetails.swift */,
+				FF1AAB81212767870092AD90 /* LoginViewController.swift */,
 				FFFAAF38211C8CEE00FE6E75 /* Cells */,
 			);
 			path = ViewControllers;
@@ -327,12 +330,26 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-CoursesApp/Pods-CoursesApp-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKShareKit/FBSDKShareKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookCore/FacebookCore.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookLogin/FacebookLogin.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookShare/FacebookShare.framework",
 				"${BUILT_PRODUCTS_DIR}/Hero/Hero.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKShareKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookLogin.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookShare.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hero.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 			);
@@ -376,6 +393,7 @@
 				FFFAAF522123152000FE6E75 /* HomeViewController.swift in Sources */,
 				FFFAAF33211C560900FE6E75 /* CoursesTableViewCell.swift in Sources */,
 				FFFAAF2B211B4B6500FE6E75 /* CategoryCellVC.swift in Sources */,
+				FF1AAB82212767870092AD90 /* LoginViewController.swift in Sources */,
 				FFFAAF4C211EB79E00FE6E75 /* CourseServicesCell.swift in Sources */,
 				FFFAAF4E2120B30C00FE6E75 /* CourseActionsCell.swift in Sources */,
 				FFFAAF54212315A100FE6E75 /* HomeCell.swift in Sources */,
