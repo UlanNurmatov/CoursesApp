@@ -129,5 +129,41 @@ class ServerManager: HTTPRequestManager {
             error(errorMessage)
         }
     }
+    
+    func getUnivCategories(completion: @escaping ([Category]) -> (), error: @escaping (String) -> ()) {
+        self.get(endpoint: Constants.Network.EndPoint.universities, completion: { (data) in
+            //TODO
+            do {
+                guard let  data = data else { return }
+                let result = try JSONDecoder().decode([Category].self, from: data)
+                completion(result)
+            }
+            catch let errorMessage {
+                error(errorMessage.localizedDescription)
+            }
+            
+        }) { (errorMessage) in
+            error(errorMessage)
+        }
+    }
+    
+    func getUnivOfCategory(id: Int, completion: @escaping ([University]) -> (), error: @escaping (String) -> ()) {
+        self.get(endpoint: "\(Constants.Network.EndPoint.universities)\(id)", completion: { (data) in
+            //TODO
+            do {
+                guard let  data = data else { return }
+                let result = try JSONDecoder().decode([University].self, from: data)
+                completion(result)
+            }
+            catch let errorMessage {
+                error(errorMessage.localizedDescription)
+            }
+            
+        }) { (errorMessage) in
+            error(errorMessage)
+        }
+    }
+    
+    
 
 }
